@@ -1,144 +1,122 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
     color: #333;
-    background-color: #f9f9f9;
+    scroll-behavior: smooth;
 }
 
-/* Scroll Bar */
-#scroll-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 4px;
-    background: #3498db;
-    width: 0%;
-    z-index: 1000;
-}
-
-/* Header Styles */
 header {
-    background: linear-gradient(45deg, #2c3e50, #3498db);
-    background-size: 400% 400%;
+    background: linear-gradient(to right, #2c3e50, #3498db);
     color: white;
-    padding: 20px 0;
     text-align: center;
-    animation: gradientBG 8s ease infinite;
+    padding: 50px 0;
 }
 
-@keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+header h1 {
+    font-size: 3em;
+    margin: 0;
 }
 
-/* Typing Effect */
-.typing-effect span {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid white;
-    font-size: 2em;
-    animation: typing 3s steps(15), blink 0.5s step-end infinite alternate;
+header p {
+    font-size: 1.2em;
+    margin: 10px 0;
 }
 
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink {
-    from { border-right-color: white; }
-    to { border-right-color: transparent; }
-}
-
-/* Navigation Styles */
-nav {
-    background: #34495e;
-    color: white;
-}
-
-nav ul {
-    padding: 0;
+.navbar ul {
     list-style: none;
+    padding: 0;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
-nav ul li {
+.navbar ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
+.navbar ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1em;
     font-weight: bold;
-    position: relative;
+    transition: color 0.3s;
 }
 
-nav ul li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background: white;
-    left: 0;
-    bottom: -5px;
-    transition: width 0.3s;
+.navbar ul li a:hover {
+    color: #1abc9c;
 }
 
-nav ul li a:hover::after {
-    width: 100%;
-}
-
-/* Card Styles */
-.card-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-.card {
-    perspective: 1000px;
-}
-
-.card-inner {
-    width: 300px;
-    height: 200px;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
-
-.card:hover .card-inner {
-    transform: rotateY(180deg);
-}
-
-.card-front, .card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background: #3498db;
-    border-radius: 8px;
-}
-
-.card-back {
-    transform: rotateY(180deg);
-    background: #2c3e50;
-}
-
-/* Footer Styles */
-footer {
+/* Section Styles */
+main section {
+    padding: 60px 20px;
     text-align: center;
+}
+
+main section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #3498db;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills-list li {
+    background: #f4f4f4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Research Items */
+.research-item {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.research-item h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#contact ul li {
+    margin: 10px 0;
+}
+
+#contact ul li a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+#contact ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
     background: #2c3e50;
     color: white;
-    padding: 10px 0;
+    text-align: center;
+    padding: 20px 0;
     margin-top: 20px;
 }
