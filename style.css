@@ -5,19 +5,19 @@ body {
     padding: 0;
     color: #444;
     scroll-behavior: smooth;
-    background-color: #f9f9f9;
+    background-color: #f7f7f7; /* Subtle off-white background */
 }
 
 h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #ff5733; /* Bright Orange */
+    color: #556b78; /* Muted dark teal */
     font-size: 2.5em;
 }
 
 /* Header */
 header {
-    background: linear-gradient(to right, #ff5733, #ffc300, #ff5733); /* Vibrant Orange and Yellow */
+    background: linear-gradient(to right, #78997a, #b9a089); /* Muted green and light brown gradient */
     color: white;
     text-align: center;
     padding: 50px 20px;
@@ -35,7 +35,7 @@ header {
     height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
-    border: 5px solid #ffc300; /* Bright Yellow Border */
+    border: 4px solid #b9a089; /* Light brown border */
 }
 
 /* Navbar */
@@ -61,21 +61,21 @@ header {
 }
 
 .navbar ul li a:hover {
-    background-color: #ff5733; /* Bright Orange */
+    background-color: #78997a; /* Muted green */
     color: white;
 }
 
 /* Section */
 section {
     padding: 60px 20px;
-    background: #f9f9f9;
+    background: #ffffff; /* Crisp white background */
     margin: 20px 0;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
 }
 
 section:nth-child(even) {
-    background-color: #ffeaa7; /* Soft Yellow Background for Alternating Sections */
+    background-color: #f0f4f7; /* Subtle light gray-blue for alternating sections */
 }
 
 section p, section ul {
@@ -85,12 +85,12 @@ section p, section ul {
 
 /* Research Items */
 .research-item {
-    background: #ff7675; /* Light Coral */
+    background: #e8e3db; /* Light brown-gray */
     padding: 20px;
     margin: 20px auto;
     max-width: 600px;
     border-radius: 8px;
-    color: white;
+    color: #2c3e50; /* Dark gray-blue */
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -101,7 +101,7 @@ section p, section ul {
 }
 
 .research-item:hover {
-    background: #d63031; /* Brighter Coral */
+    background: #d7cdbf; /* Slightly darker light brown */
     transform: translateY(-5px);
     transition: all 0.3s ease-in-out;
 }
@@ -117,15 +117,15 @@ section p, section ul {
 .skill-item {
     text-align: center;
     padding: 15px;
-    background: #55efc4; /* Bright Aqua */
+    background: #d4e6d4; /* Light green-gray */
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .skill-item:hover {
     transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .skill-item img {
@@ -134,7 +134,7 @@ section p, section ul {
 }
 
 .skill-item p {
-    color: #2d3436; /* Dark Gray */
+    color: #2c3e50; /* Dark gray-blue */
     font-weight: bold;
     font-size: 1.2em;
 }
@@ -152,53 +152,53 @@ section p, section ul {
 }
 
 #publications ul li a {
-    color: #ff5733; /* Bright Orange */
+    color: #556b78; /* Muted dark teal */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 #publications ul li a:hover {
-    color: #d63031; /* Brighter Coral */
+    color: #78997a; /* Muted green */
     text-decoration: underline;
 }
 
 /* Contact Section */
 #contact {
-    background: #6c5ce7; /* Bright Purple */
-    color: white;
+    background: #c5d6dc; /* Light muted teal-gray */
+    color: #2c3e50; /* Dark gray-blue */
     text-align: center;
+    border-radius: 10px;
 }
 
 #contact a {
-    color: #55efc4; /* Bright Aqua */
+    color: #78997a; /* Subtle green */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 #contact a:hover {
-    color: #ffeaa7; /* Bright Yellow */
+    color: #b9a089; /* Light brown */
 }
 
 /* Footer */
 footer {
-    background: #2c3e50; /* Dark Blue */
+    background: #556b78; /* Muted dark teal */
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
 }
 
-/* Button Hover */
 footer a:hover {
-    color: #ff5733; /* Bright Orange */
+    color: #78997a; /* Muted green */
 }
 
 /* Animations for Hover */
 .navbar ul li a:hover,
 footer a:hover {
-    background-color: #ffc300;
+    background-color: #b9a089; /* Light brown */
     border-radius: 5px;
-    color: #2c3e50;
+    color: white;
 }
