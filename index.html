@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jagriti Jain - Research Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- AOS Library for Scroll Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Scroll Indicator -->
+    <div id="scroll-bar"></div>
+
     <header>
         <div class="container">
-            <h1>Jagriti Jain</h1>
+            <div class="typing-effect">
+                <span>Jagriti Jain</span>
+            </div>
             <p>Ph.D. Scholar | Water Resources Development and Management</p>
             <p>Indian Institute of Technology, Roorkee</p>
             <p>Email: <a href="mailto:jagjain8@gmail.com">jagjain8@gmail.com</a> | Phone: +91-9560882541</p>
@@ -27,22 +34,49 @@
     </nav>
 
     <main>
-        <section id="about" class="section">
+        <section id="about" class="section" data-aos="fade-up">
             <h2>About Me</h2>
             <p>I am a dedicated researcher in water resources, focusing on urban flood resilience, socio-environmental systems, and the impacts of climate change. With a strong foundation in hydrology, geospatial analysis, and computational modeling, I aim to contribute to sustainable solutions for water resource management and climate adaptation.</p>
         </section>
 
-        <section id="research" class="section">
+        <section id="research" class="section" data-aos="fade-right">
             <h2>Research</h2>
             <p>My research explores the dynamic interactions between hydrology, climate change, and urban systems. Key projects include:</p>
-            <ul>
-                <li><strong>Assessing Urban Community Resilience to Flood:</strong> Hybrid multi-criteria decision-making framework applied to Guwahati City, Assam, India.</li>
-                <li><strong>Policy Improvement for Flood Disaster Management:</strong> Leveraging flood risk attributes to enhance governance frameworks in India.</li>
-                <li><strong>Hydroclimatic Impacts on Socio-Environmental Systems:</strong> Investigating regime transitions in the Brahmaputra catchment under extreme events.</li>
-            </ul>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Urban Flood Resilience</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Hybrid multi-criteria decision-making framework applied to Guwahati City, Assam, India.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Policy Improvement</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Leveraging flood risk attributes to enhance governance frameworks in India.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Hydroclimatic Impacts</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Studying regime transitions in the Brahmaputra catchment under extreme events.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="publications" class="section">
+        <section id="publications" class="section" data-aos="fade-left">
             <h2>Publications</h2>
             <ul>
                 <li><a href="https://doi.org/10.1007/s41748-024-00534-6" target="_blank">Assessing Urban Community Resilience to Flood Using a Hybrid Multi-Criteria Decision-Making Approach</a></li>
@@ -51,7 +85,7 @@
             </ul>
         </section>
 
-        <section id="skills" class="section">
+        <section id="skills" class="section" data-aos="fade-up">
             <h2>Skills</h2>
             <ul>
                 <li><strong>Programming:</strong> Python, R, C++</li>
@@ -60,7 +94,7 @@
             </ul>
         </section>
 
-        <section id="contact" class="section">
+        <section id="contact" class="section" data-aos="zoom-in">
             <h2>Contact</h2>
             <p>If you'd like to connect, feel free to reach out:</p>
             <ul>
@@ -75,5 +109,16 @@
     <footer>
         <p>&copy; 2025 Jagriti Jain | All Rights Reserved</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        window.onscroll = function() {
+            var scrollPosition = document.documentElement.scrollTop;
+            var totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrollPercentage = (scrollPosition / totalHeight) * 100;
+            document.getElementById('scroll-bar').style.width = scrollPercentage + "%";
+        };
+    </script>
 </body>
 </html>
