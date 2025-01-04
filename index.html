@@ -6,15 +6,17 @@
     <title>Jagriti Jain - Research Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header Section -->
     <header id="home">
         <div class="header-container">
-            <img src="images/profile.jpg" alt="Jagriti Jain" class="profile-img">
-            <h1>Jagriti Jain</h1>
-            <p>Ph.D. Scholar | Water Resources Development and Management</p>
-            <nav class="navbar">
+            <img src="images/profile.jpg" alt="Jagriti Jain" class="profile-img" data-aos="fade-down">
+            <h1 data-aos="fade-up">Jagriti Jain</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Ph.D. Scholar | Water Resources Development and Management</p>
+            <nav class="navbar" data-aos="fade-up" data-aos-delay="400">
                 <ul>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#research">Research</a></li>
@@ -31,7 +33,7 @@
     </header>
 
     <!-- About Me Section -->
-    <section id="about">
+    <section id="about" data-aos="fade-right">
         <h2>About Me</h2>
         <p>
             I am a dedicated researcher focusing on urban flood resilience, socio-environmental systems, and climate change impacts. 
@@ -41,23 +43,23 @@
 
     <!-- Research Section -->
     <section id="research">
-        <h2>Research</h2>
-        <div class="research-item">
+        <h2 data-aos="fade-up">Research</h2>
+        <div class="research-item" data-aos="zoom-in">
             <h3>Urban Flood Resilience</h3>
             <p>Developed a hybrid multi-criteria decision-making framework applied to Guwahati City, Assam, India.</p>
         </div>
-        <div class="research-item">
+        <div class="research-item" data-aos="zoom-in" data-aos-delay="200">
             <h3>Policy Improvement</h3>
             <p>Analyzed flood risk attributes to enhance governance frameworks in India.</p>
         </div>
-        <div class="research-item">
+        <div class="research-item" data-aos="zoom-in" data-aos-delay="400">
             <h3>Hydroclimatic Impacts</h3>
             <p>Investigated regime transitions in the Brahmaputra catchment under extreme events.</p>
         </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education">
+    <section id="education" data-aos="fade-up">
         <h2>Education</h2>
         <ul>
             <li>Ph.D. in Water Resources Development and Management, IIT Roorkee (2019–Present)</li>
@@ -67,7 +69,7 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience">
+    <section id="experience" data-aos="fade-up">
         <h2>Experience</h2>
         <ul>
             <li>Visiting Scholar, University of Nebraska-Lincoln (Jan 2023 – June 2023)</li>
@@ -77,7 +79,7 @@
     </section>
 
     <!-- Publications Section -->
-    <section id="publications">
+    <section id="publications" data-aos="fade-left">
         <h2>Publications</h2>
         <ul>
             <li><a href="https://doi.org/10.1007/s41748-024-00534-6" target="_blank">Assessing Urban Community Resilience to Flood</a></li>
@@ -87,7 +89,7 @@
     </section>
 
     <!-- Teaching Section -->
-    <section id="teaching">
+    <section id="teaching" data-aos="fade-right">
         <h2>Teaching</h2>
         <ul>
             <li>Teaching Assistant, Hydroclimatology Course, University of Nebraska-Lincoln</li>
@@ -96,22 +98,22 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" data-aos="fade-up">
         <h2>Skills</h2>
         <div class="skills-container">
-            <div class="skill-item">
+            <div class="skill-item" data-aos="flip-left">
                 <img src="images/python.png" alt="Python">
                 <p>Python</p>
             </div>
-            <div class="skill-item">
+            <div class="skill-item" data-aos="flip-left" data-aos-delay="200">
                 <img src="images/r.png" alt="R">
                 <p>R</p>
             </div>
-            <div class="skill-item">
+            <div class="skill-item" data-aos="flip-left" data-aos-delay="400">
                 <img src="images/gis.png" alt="GIS">
                 <p>RS-GIS Applications</p>
             </div>
-            <div class="skill-item">
+            <div class="skill-item" data-aos="flip-left" data-aos-delay="600">
                 <img src="images/ml.png" alt="Machine Learning">
                 <p>Machine Learning</p>
             </div>
@@ -119,7 +121,7 @@
     </section>
 
     <!-- Fellowships Section -->
-    <section id="fellowships">
+    <section id="fellowships" data-aos="fade-right">
         <h2>Fellowships & Scholarships</h2>
         <ul>
             <li>MHRD Fellowship for Doctoral Programme (2019–Present)</li>
@@ -129,7 +131,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" data-aos="zoom-in">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:jagjain8@gmail.com">jagjain8@gmail.com</a></p>
         <p>Phone: +91-9560882541</p>
@@ -140,5 +142,11 @@
     <footer>
         <p>&copy; 2025 Jagriti Jain | All Rights Reserved</p>
     </footer>
+
+    <!-- AOS JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
