@@ -4,68 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jagriti Jain - Research Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header id="home">
-        <div class="header-container">
-            <h1>Jagriti Jain</h1>
+    <!-- Scroll Indicator -->
+    <div id="scroll-bar"></div>
+
+    <header>
+        <div class="container">
+            <div class="typing-effect">
+                <span>Jagriti Jain</span>
+            </div>
             <p>Ph.D. Scholar | Water Resources Development and Management</p>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#research">Research</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <p>Indian Institute of Technology, Roorkee</p>
+            <p>Email: <a href="mailto:jagjain8@gmail.com">jagjain8@gmail.com</a> | Phone: +91-9560882541</p>
         </div>
     </header>
 
+    <!-- Horizontal Navigation for Sections -->
+    <nav class="horizontal-nav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section id="about">
+        <section id="about" class="section" data-aos="fade-up">
             <h2>About Me</h2>
-            <p>I am a dedicated researcher in water resources, focusing on urban flood resilience, socio-environmental systems, and the impacts of climate change. My expertise lies in hydrology, geospatial analysis, and computational modeling.</p>
+            <p>I am a dedicated researcher in water resources, focusing on urban flood resilience, socio-environmental systems, and the impacts of climate change. With a strong foundation in hydrology, geospatial analysis, and computational modeling, I aim to contribute to sustainable solutions for water resource management and climate adaptation.</p>
         </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>Python, R, C++</li>
-                <li>RS-GIS Applications, Hydrological Modeling</li>
-                <li>Machine Learning, Complex Adaptive Systems</li>
-                <li>ArcGIS, AutoCAD, IBM SPSS</li>
-            </ul>
-        </section>
-
-        <section id="research">
+        <section id="research" class="section" data-aos="fade-right">
             <h2>Research</h2>
-            <div class="research-item">
-                <h3>Urban Flood Resilience</h3>
-                <p>Developed a hybrid multi-criteria decision-making framework applied to Guwahati City, Assam, India.</p>
-            </div>
-            <div class="research-item">
-                <h3>Policy Improvement</h3>
-                <p>Analyzed flood risk attributes to enhance governance frameworks in India.</p>
-            </div>
-            <div class="research-item">
-                <h3>Hydroclimatic Impacts</h3>
-                <p>Investigated regime transitions in the Brahmaputra catchment under extreme events.</p>
+            <p>My research explores the dynamic interactions between hydrology, climate change, and urban systems. Key projects include:</p>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Urban Flood Resilience</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Hybrid multi-criteria decision-making framework applied to Guwahati City, Assam, India.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Policy Improvement</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Leveraging flood risk attributes to enhance governance frameworks in India.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Hydroclimatic Impacts</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Studying regime transitions in the Brahmaputra catchment under extreme events.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="publications">
+        <section id="publications" class="section" data-aos="fade-left">
             <h2>Publications</h2>
             <ul>
                 <li><a href="https://doi.org/10.1007/s41748-024-00534-6" target="_blank">Assessing Urban Community Resilience to Flood Using a Hybrid Multi-Criteria Decision-Making Approach</a></li>
-                <li><a href="https://doi.org/10.1016/B978-0-323-85512-9.00019-X" target="_blank">Short-Term Resilience and Transformation of Urban Socio-Environmental Systems</a></li>
-                <li><a href="https://doi.org/10.1007/978-3-031-35279-9_3" target="_blank">Remote Sensing and Machine Learning Applications for Urban Water Stress</a></li>
+                <li><a href="https://doi.org/10.1016/B978-0-323-85512-9.00019-X" target="_blank">Short-Term Resilience and Transformation of the Urban Socio-Environmental Systems to COVID-19 Lockdown in India</a></li>
+                <li><a href="https://doi.org/10.1007/978-3-031-35279-9_3" target="_blank">Remote Sensing and Machine Learning Applications for the Assessment of Urban Water Stress</a></li>
             </ul>
         </section>
 
-        <section id="contact">
+        <section id="skills" class="section" data-aos="fade-up">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming:</strong> Python, R, C++</li>
+                <li><strong>Modeling Tools:</strong> ArcGIS, AutoCAD, MS Project, IBM SPSS, ERDAS IMAGINE</li>
+                <li><strong>Specializations:</strong> Machine Learning, Complex Adaptive Systems, Hydrological Modeling</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section" data-aos="zoom-in">
             <h2>Contact</h2>
             <p>If you'd like to connect, feel free to reach out:</p>
             <ul>
@@ -80,5 +109,16 @@
     <footer>
         <p>&copy; 2025 Jagriti Jain | All Rights Reserved</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        window.onscroll = function() {
+            var scrollPosition = document.documentElement.scrollTop;
+            var totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrollPercentage = (scrollPosition / totalHeight) * 100;
+            document.getElementById('scroll-bar').style.width = scrollPercentage + "%";
+        };
+    </script>
 </body>
 </html>
