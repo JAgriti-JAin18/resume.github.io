@@ -1,122 +1,29 @@
-/* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    scroll-behavior: smooth;
-}
-
-header {
-    background: linear-gradient(to right, #2c3e50, #3498db);
-    color: white;
-    text-align: center;
-    padding: 50px 0;
-}
-
-header h1 {
-    font-size: 3em;
-    margin: 0;
-}
-
-header p {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-.navbar ul {
-    list-style: none;
-    padding: 0;
+/* Horizontal Navigation Styles */
+.horizontal-nav ul {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #34495e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.navbar ul li {
-    margin: 0 15px;
+.horizontal-nav ul li {
+    margin: 0 20px;
 }
 
-.navbar ul li a {
+.horizontal-nav ul li a {
+    display: inline-block;
+    padding: 15px 20px;
     color: white;
     text-decoration: none;
-    font-size: 1em;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: background 0.3s, color 0.3s;
 }
 
-.navbar ul li a:hover {
-    color: #1abc9c;
-}
-
-/* Section Styles */
-main section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-main section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #3498db;
-}
-
-.skills-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.skills-list li {
-    background: #f4f4f4;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Research Items */
-.research-item {
-    margin: 20px auto;
-    max-width: 600px;
-    text-align: left;
-    padding: 15px;
-    background: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.research-item h3 {
-    color: #2c3e50;
-    margin-bottom: 10px;
-}
-
-/* Contact Section */
-#contact ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-}
-
-#contact ul li {
-    margin: 10px 0;
-}
-
-#contact ul li a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-#contact ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
+.horizontal-nav ul li a:hover {
     background: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
+    color: #3498db;
+    border-radius: 5px;
 }
